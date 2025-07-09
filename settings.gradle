@@ -1,9 +1,10 @@
 pluginManagement {
-	repositories {
-		mavenCentral()
-		gradlePluginPortal()
-		maven { url "https://repo.spring.io/release" }
-	}
+    repositories {
+//        mavenLocal()    // 优先本地仓库
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://repo.spring.io/release" }
+    }
 }
 
 plugins {
@@ -55,3 +56,5 @@ settings.gradle.projectsLoaded {
 		}
 	}
 }
+
+include "spring-source-test"
