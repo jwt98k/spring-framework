@@ -9,6 +9,15 @@ public class Person {
 	private String name;
 	private Integer age;
 
+	public Person() {
+		System.out.println("我被创建了");
+	}
+
+	public Person(String name, Integer age) {
+		this.name = name;
+		this.age = age;
+	}
+
 	public String getName() {
 		return name;
 	}
