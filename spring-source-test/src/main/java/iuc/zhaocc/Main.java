@@ -12,13 +12,6 @@ import java.lang.management.ManagementFactory;
  */
 public class Main {
 	public static void main(String[] args) {
-		System.out.println(
-				ManagementFactory.getRuntimeMXBean().getInputArguments()
-		);
-		System.out.println(Main.class.getProtectionDomain()
-				.getCodeSource()
-				.getLocation());
-		System.out.println("123");
 		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("bean.xml");
 		Person person = (Person) applicationContext.getBean("person");
 		System.out.println(person);

@@ -307,6 +307,7 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 		if (bdHolder != null) {
 			bdHolder = delegate.decorateBeanDefinitionIfRequired(ele, bdHolder);
 			try {
+				//注册Bean定义信息
 				// Register the final decorated instance.
 				BeanDefinitionReaderUtils.registerBeanDefinition(bdHolder, getReaderContext().getRegistry());
 			}
