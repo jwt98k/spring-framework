@@ -10,7 +10,7 @@ import java.lang.management.ManagementFactory;
  * @version 1.0
  * @date 2026-07-15
  */
-public class SourceApp {
+public class XmlSourceApp {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("bean.xml");
 		Person person = (Person) applicationContext.getBean("person");
