@@ -1,0 +1,51 @@
+package iuc.zhaocc.process.bean;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.PropertyValues;
+import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor;
+import org.springframework.stereotype.Component;
+
+import java.beans.PropertyDescriptor;
+
+/**
+ * @author zhaocc
+ * @version 1.0
+ * @date 2026-07-17
+ */
+@Component
+public class MyInstantiationAwareBeanPostProcessor implements InstantiationAwareBeanPostProcessor {
+	public MyInstantiationAwareBeanPostProcessor() {
+		System.out.println("MyInstantiationAwareBeanPostProcessor");
+	}
+
+	@Override
+	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+		System.out.println("MyInstantiationAwareBeanPostProcessor ==>postProcessBeforeInitialization");
+		return null;
+	}
+
+	@Override
+	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+		System.out.println("MyInstantiationAwareBeanPostProcessor ==>postProcessAfterInitialization");
+		return null;
+	}
+
+	@Override
+	public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
+		System.out.println("MyInstantiationAwareBeanPostProcessor ==>postProcessBeforeInstantiation");
+		return null;
+	}
+
+	@Override
+	public boolean postProcessAfterInstantiation(Object bean, String beanName) throws BeansException {
+		System.out.println("MyInstantiationAwareBeanPostProcessor ==>postProcessAfterInstantiation");
+		return false;
+	}
+
+	@Override
+	public PropertyValues postProcessProperties(PropertyValues pvs, Object bean, String beanName) throws BeansException {
+		System.out.println("MyInstantiationAwareBeanPostProcessor ==>postProcessProperties");
+		return null;
+	}
+
+}
