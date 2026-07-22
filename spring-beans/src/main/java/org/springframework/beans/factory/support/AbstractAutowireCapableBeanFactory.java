@@ -599,9 +599,9 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		// Initialize the bean instance.
 		Object exposedObject = bean;
 		try {
-			//填充bean
+			//给实例属性赋值
 			populateBean(beanName, mbd, instanceWrapper);
-			//初始化Bean
+			//初始化Bean：1.调用Aware接口方法 2.调用初始化方法 3.调用后置处理器
 			exposedObject = initializeBean(beanName, exposedObject, mbd);
 		}
 		catch (Throwable ex) {
@@ -1720,7 +1720,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 			mpvs.setConverted();
 		}
 
-		// Set our (possibly massaged) deep copy.
+		// Set our (possibly massaged) deep copy. 给属性赋值
 		try {
 			bw.setPropertyValues(new MutablePropertyValues(deepCopy));
 		}

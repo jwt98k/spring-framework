@@ -37,6 +37,7 @@ include "spring-websocket"
 include "framework-bom"
 include "integration-tests"
 include 'spring-source-test'
+include 'spring-zhaocc-annotation'
 
 rootProject.name = "spring"
 rootProject.children.each { project ->
@@ -63,4 +64,5 @@ settings.gradle.projectsLoaded {
         }
     }
 }
+
 

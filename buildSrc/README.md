@@ -1,7 +1,7 @@
 # Spring Framework Build
 
 This folder contains the custom plugins and conventions for the Spring Framework build.
-They are declared in the `build.gradle` file in this folder.
+They are declared in the `spring-zhaocc-annotation.gradle` file in this folder.
 
 ## Build Conventions
 
