@@ -10,6 +10,9 @@ public class Cat {
 	private String category;
 	private String color;
 
+	public Cat() {
+		System.out.println("cat 创建了");
+	}
 	public String getName() {
 		return name;
 	}

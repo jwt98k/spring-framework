@@ -12,9 +12,9 @@ import java.lang.management.ManagementFactory;
  */
 public class XmlSourceApp {
 	public static void main(String[] args) {
-		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("bean.xml");
-		Person person = (Person) applicationContext.getBean("person");
-		System.out.println(person);
+		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("bean2.xml");
+		// Person person = (Person) applicationContext.getBean("person");
+		// System.out.println(person);
 
 	}
 }

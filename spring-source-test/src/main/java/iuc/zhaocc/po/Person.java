@@ -45,7 +45,6 @@ public class Person implements ApplicationContextAware {
 		return cat;
 	}
 
-	@Autowired
 	public void setCat(Cat cat) {
 		this.cat = cat;
 	}
